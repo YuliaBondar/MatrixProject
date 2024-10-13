@@ -1,0 +1,26 @@
+.popup-window {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 20px; */
+    background-color: #fdfdfd;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    /* margin-bottom: 50px; */
+    color: #721c24;
+}

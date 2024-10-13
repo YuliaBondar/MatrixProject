@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import PopupWindow from '../PopupWindow/PopupWindow';
 import './Form.css';
+
 const Form = () => {
+    
     // Создаём состояния для наших инпутов.
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -13,9 +16,9 @@ const Form = () => {
     const [phoneDirty, setPhoneDirty] = useState(false);
     const [nameError, setNameError] = useState('Имя не может быть пустым');
     const [emailError, setEmailError] = useState('email не может быть пустым');
-    const [phoneError, setPhoneError] = useState(
-        'Телефон не может быть пустым'
-    );
+    const [phoneError, setPhoneError] = useState('Телефон не может быть пустым' );
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState('');
 
     // Создаём функции для изменения состояния имени и валидации имени.
     const changeName = (e) => {
@@ -57,10 +60,6 @@ const Form = () => {
         
       };
 
-
-
-
-      
     // Валидации всей формы и кнопки отправки 
     const [formValid, setFormValid] = useState(false)
     useEffect(() =>{
@@ -90,14 +89,17 @@ const Form = () => {
         })
         .then((result) => {
             if (result.response && result.response.msg) {
-                alert(result.response.msg);
+                setPopupMessage(result.response.msg);
+                setShowPopup(true);
             } else {
-                alert('Ошибка: Некорректный ответ сервера');
+                setPopupMessage('Ошибка: Некорректный ответ сервера');
+                setShowPopup(true);
             }
         })
         .catch((error) => {
             console.error('Error:', error);
-            alert('Failed to fetch: ' + error.message);
+            setPopupMessage('Failed to fetch: ' + error.message);
+            setShowPopup(true);
         });
     };
 
@@ -114,7 +116,7 @@ const Form = () => {
                 break
                 default:
         }
-      }
+    }
 
     return (
         <div className='wrapper'>
@@ -163,6 +165,7 @@ const Form = () => {
                     </button>
          
                 </form>
+                {showPopup && <PopupWindow message={popupMessage} onClose={() => setShowPopup(false)} />}
             </div>
         </div>
     );

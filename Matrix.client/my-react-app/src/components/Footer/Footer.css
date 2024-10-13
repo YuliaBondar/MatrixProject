@@ -1,0 +1,18 @@
+.footer_block{
+    color:green;
+    border-radius: 10px 10px 0px 0px;
+    border:1px solid green;
+    background: rgba(36, 36, 36, 0.75); 
+}
+
+.footer_block_elements{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
+    list-style-type: none;
+}
+
+.footer_block_elements li:hover{
+    color:rgb(54, 62, 59);
+    /* cursor: pointer; */
+}
