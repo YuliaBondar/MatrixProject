@@ -5,7 +5,6 @@ module.exports.sendMsg = (req, res) => {
     let http = require('request');
     let reqBody = req.body;
 
-    // Собираем данные формы в массив
     let fields = [
         '<b>Имя</b>: ' + reqBody.name,
         '<b>Email</b>: ' + reqBody.email,
