@@ -1,0 +1,75 @@
+.unswer{
+    margin: 10vw 10vw 0 10vw;
+}
+.our_questions_block {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: inline;
+    align-items: center;
+    
+}
+
+.animated_phrase {
+    color: #ffffff;
+    animation: fade 1s ease-in-out infinite;
+}
+
+.our_questions_block h1,
+ .unswer h1{
+    position: relative;
+    /* font-size: 2.5em; */
+    padding: 10px;
+    background: url('../../photo//matrix.png') center center no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+
+.unswer_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw; /* Расстояние между блоками */
+    flex-wrap: wrap; /* Перенос блоков на следующую строку при необходимости */
+}
+
+.block {
+    position: relative; /* Ensure positioning context for the pseudo-element */
+    height: 300px;
+    width: 255px; /* Block width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    border: 1px solid #179e17;
+    border-radius: 5px;
+    overflow: hidden; /* To ensure pseudo-element is contained within the block */
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../photo/background.jpg') center center/cover; /* Background image */
+    opacity: 0.5; /* Darkened background */
+    z-index: 1; /* Layering behind the text */
+}
+
+.block p {
+    position: relative;
+    z-index: 2; /* Слой текста над фоном */
+    height: 280px;
+    background: rgba(33, 33, 33, 0.7); /* Полупрозрачный фон */
+    padding: 1vw;
+    border-radius: 5px; /* Округленные углы */
+    border:1px solid green
+    
+}

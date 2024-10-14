@@ -1,6 +1,7 @@
 import React from 'react'
 import './OurWork.css'
-import Worker from '../../photo/photo_work.jpg'
+import Worker from '../../photo/photo.png'
+// import Matrix from '../../photo/matrix.png'
 
 const OurWork = () => {
   return (
