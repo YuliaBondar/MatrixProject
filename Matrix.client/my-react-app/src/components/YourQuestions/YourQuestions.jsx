@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './YourQuestions.css'
-import elem_blocks from './blocks_elemen.js' 
+import blocks_elem from './blocks_elemen.js' 
 
 const Questions = () => {
   
@@ -29,9 +29,13 @@ const Questions = () => {
                 <h1>И получаете ответы...</h1>
             
                 <div className="unswer_block">
-                    {elem_blocks.map(block => (
+                    {blocks_elem.map(block => (
                     <div key={block.id} className="block">
-                        <p>{block.text}</p>
+                        <div className="elemen_text">
+                            <p>{block.text}</p>
+                            <block.Icon size={50} color="#179e17" />
+                        </div>
+                        
                     </div>
                     ))}
                 </div>

@@ -119,7 +119,7 @@ const Form = () => {
     }
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper' id='request'>
             <div className='login-box'>
                 <h2>Заявка</h2>
                 <form >

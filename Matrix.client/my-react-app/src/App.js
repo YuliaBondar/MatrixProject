@@ -3,18 +3,18 @@ import './App.css';
 // import Form from './shared/Form/Form'
 import Navigation from './components/Navigation/Navigation'
 import Footer from './components/Footer/Footer'
-import OurWork from './components/OurWork/OurWork'
-import YorQuestions from './components/YourQuestions/Questions'
-
+import AboutUs from './blocks/AboutUs/AboutUs.jsx'
+import Services from './blocks/ServicesForPeople/Services.jsx'
+import Application from './blocks/Application/Application.jsx'
 function App() {
   return (
     <div className="App">
       <Navigation />
       <div className="App-content">
-        {/* <Form /> */}
-      <OurWork/>
-      <YorQuestions/>
-      
+       
+      <AboutUs/>
+      <Services/>
+      <Application/>
 
       </div>
       <Footer />
