@@ -1,15 +1,36 @@
 .login-box {
+  position: relative; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
+  align-items: center;
+  justify-content: center;
   width: 400px;
   padding: 40px;
-  margin: 20px auto; /* Center the form */
-  background: rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  background: url('../../photo/foto.png') no-repeat center center;
+  background-size: cover;
+  border: 1px solid green;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  margin-bottom: 7vw;
+  overflow: hidden; 
+}
+
+.login-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 0; 
+}
+
+.login-box h2, .login-box .user-box, .login-box .user-box input, .login-box .user-box textarea, .login-box .user-box label, .login-box form a, .login-box button, .error1, .error2, .error3 {
+  position: relative;
+  z-index: 1; 
 }
 
 .login-box h2 {
@@ -21,13 +42,11 @@
 
 .login-box .user-box {
   width: 100%;
-    position: relative;
-    margin-bottom: 15px;
-  
+  position: relative;
+  margin-bottom: 1px;
 }
 
-.login-box .user-box input ,
-textarea{
+.login-box .user-box input, .login-box .user-box textarea {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -70,7 +89,7 @@ textarea{
   transition: 0.5s;
   margin-top: 10px;
   letter-spacing: 4px;
-  border: 1px solid #03e9f4;
+  border: 1px solid green;
 }
 
 .login-box a span {
@@ -108,6 +127,7 @@ textarea{
     left: 50%;
     transform: translateX(-50%);
     width:400px;
+    margin-left: 55px;
   }
   .error2 {
     font-size: 20px;
@@ -118,6 +138,7 @@ textarea{
     left: 50%;
     transform: translateX(-50%);
     width:400px;
+    margin-left: 55px;
   }
   .error3 {
     font-size: 20px;
@@ -128,4 +149,5 @@ textarea{
     left: 50%;
     transform: translateX(-50%);
     width:400px;
+    margin-left: 55px;
   }

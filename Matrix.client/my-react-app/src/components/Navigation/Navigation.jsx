@@ -19,8 +19,8 @@ const Navigation = () => {
           <nav>
             <li><a href="#work" onClick={() => handleSetActive('work')} className={activeLink === 'work' ? 'active' : ''}>Как мы работаем</a></li>
             <li><a href="#services" onClick={() => handleSetActive('services')} className={activeLink === 'services' ? 'active' : ''}>Услуги</a></li>
-            <li><a href="#contacts" onClick={() => handleSetActive('contacts')} className={activeLink === 'contacts' ? 'active' : ''}>Контакты</a></li>
             <li><a href="#request" onClick={() => handleSetActive('request')} className={activeLink === 'request' ? 'active' : ''}>Оставить заявку</a></li>
+            <li><a href="#contacts" onClick={() => handleSetActive('contacts')} className={activeLink === 'contacts' ? 'active' : ''}>Контакты</a></li>
           </nav>
         </div>
       </div>

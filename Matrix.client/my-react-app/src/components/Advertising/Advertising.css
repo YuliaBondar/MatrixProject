@@ -1,0 +1,60 @@
+.advertising_Promotion_content{
+    margin: 7vw 10vw 0vw 10vw;
+    
+}
+.text_promotion h1{
+    color:rgb(14, 39, 14);
+}
+.text_promotion p{
+    color:white;
+    font-size: 18px;
+    margin-bottom: 3vw;
+}
+
+.prom_element1{
+    display:flex;
+    width: 10vw;
+}
+
+.prom_element img{
+    width: 10vw;
+    height: 10vw;
+    transition: transform 0.3s ease; 
+}
+
+
+.prom_element1:hover img {
+    transform: scale(1.2); 
+}
+
+.advertising_Promotion_block {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-around; 
+}
+
+.prom_element1 {
+    width: 45%; 
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.prom_element1:hover {
+    border: 2px solid gray; 
+}
+
+.prom_element {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap:3vw;
+}
+.text_about_element{
+    color:white;
+}
+
+.prom_element1:hover .name_element {
+    color: rgb(26, 25, 25); 
+}

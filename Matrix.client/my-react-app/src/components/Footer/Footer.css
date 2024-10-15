@@ -12,7 +12,13 @@
     list-style-type: none;
 }
 
+.contact li a{
+    list-style-type: none;
+    color: green;
+
+}
+
 .footer_block_elements li:hover{
     color:rgb(54, 62, 59);
-    /* cursor: pointer; */
+   
 }

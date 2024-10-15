@@ -1,10 +1,31 @@
-.block_consultation{
-    margin: 5vw 10vw 5vw 10vw;
+.block_consultation {
+    position: relative;
+    margin: 10vw 10vw 10vw 10vw;
+    overflow: hidden; 
 }
-.block_link_for_form{
-    display:flex;
+
+.block_consultation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../photo/worker.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px); 
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+.block_link_for_form {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    gap:100px
-    
+    gap: 100px;
+    margin: 3vw;
+    color:rgb(225, 227, 225);
+}
+.text_block p{
+    font-size: 18px;
 }

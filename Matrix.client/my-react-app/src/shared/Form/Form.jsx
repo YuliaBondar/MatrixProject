@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PopupWindow from '../PopupWindow/PopupWindow';
+import Button from '../Button/Button'
 import './Form.css';
 
 const Form = () => {
@@ -119,7 +120,7 @@ const Form = () => {
     }
 
     return (
-        <div className='wrapper' id='request'>
+        <div className='wrapper'>
             <div className='login-box'>
                 <h2>Заявка</h2>
                 <form >
@@ -160,9 +161,9 @@ const Form = () => {
                     <div className='user-box'>
                     <textarea  onChange={changeHandlerDescription} name="description" placeholder="Комментарий..." value={description} id="" cols="30" rows="3"></textarea>
                     </div>
-                    <button disabled={!formValid} type='submit' onClick={submitData}>
+                    <Button disabled={!formValid} type='submit' onClick={submitData} text='Отправить'>
                         Отправить форму
-                    </button>
+                    </Button>
          
                 </form>
                 {showPopup && <PopupWindow message={popupMessage} onClose={() => setShowPopup(false)} />}
