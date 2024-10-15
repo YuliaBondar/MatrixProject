@@ -1,0 +1,10 @@
+.block_consultation{
+    margin: 5vw 10vw 5vw 10vw;
+}
+.block_link_for_form{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:100px
+    
+}
