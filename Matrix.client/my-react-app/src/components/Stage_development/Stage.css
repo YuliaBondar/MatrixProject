@@ -13,9 +13,9 @@
 }
 
 .stages1 {
-    border: 2px solid green;
+    border: 2px solid #19c519;
     color:white;
-    width: 100px;
+    width: 150px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -27,6 +27,10 @@
 
 .arrow-icon {
     font-size: 1.5em;
-    color: #179e17; 
+    color: #19c519; 
     margin: 0 1vw;
+}
+
+.stages1 p{
+    font-size: 1.1vw;
 }

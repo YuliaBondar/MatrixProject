@@ -13,7 +13,7 @@ const WebsiteDevelopment = () => {
             <div className="sites_block_content">
             {elements_site.map(element => (
                     <div key={element.id} className="block_element1">
-                        <div className="block_element">
+                        <div className="block_elements">
                           <img src={element.photo_element} alt='images about site'/>
                           <p className='name_element'><b>{element.name_element}</b></p>
                           <p>{element.text}</p>

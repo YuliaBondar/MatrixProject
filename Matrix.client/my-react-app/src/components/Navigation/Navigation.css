@@ -27,7 +27,7 @@
 }
 
 .navigation_block_links {
-    padding: 1vw 5vw 3vw 5vw;
+    padding: 1vw 5vw 2vw 5vw;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -57,55 +57,3 @@
 .links_navigation nav li a.active {
     color: #00ff00; 
 }
-
-/* .navigation_block {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8); 
-}
-
-.navigation_block_links {
-    padding: 1vw 5vw 3vw 5vw;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 1.3vw;
-}
-
-.logo_company li a {
-    color: #179e17;
-    font-weight: 1000;
-    font-size: 1.6vw;
-    text-decoration: none;
-}
-
-.logo_company li::first-letter {
-    font-size: 2.6vw;
-    color: #179e17;
-}
-
-.links_navigation nav {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 5vw;
-}
-
-.links_navigation nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.links_navigation nav li a {
-    color: white;
-    text-decoration: none; 
-    transition: color 0.3s; 
-}
-
-.links_navigation nav li a:hover,
-.links_navigation nav li a.active {
-    color: #00ff00; 
-} */

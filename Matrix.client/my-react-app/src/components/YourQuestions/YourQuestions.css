@@ -1,5 +1,5 @@
 .unswer{
-    margin: 7vw 10vw 0 10vw;
+    margin: 5vw 10vw 0 10vw;
 }
 .our_questions_block {
     position: relative;
@@ -54,6 +54,7 @@
     height: 100%;
     background: url('../../photo/background.jpg') center center/cover; /* Background image */
     opacity: 0.5; 
+    filter:blur(1px);
     z-index: 1; 
 }
 
@@ -61,7 +62,7 @@
     position: relative;
     z-index: 2;
     height: 280px;
-    background: rgba(6, 6, 6, 0.7);
+    background: rgba(6, 6, 6, 0.5);
     padding: 1vw;
     border-radius: 5px;
     border: 1px solid green;
@@ -70,4 +71,7 @@
     justify-content: center;
     align-items: center; 
     font-size: 18px;
+}
+.elemen_text p{
+    font-size: 1.1vw;
 }

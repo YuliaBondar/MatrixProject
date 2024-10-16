@@ -10,6 +10,7 @@
     justify-content: space-between;
     padding: 0 5vw 0 5vw;
     list-style-type: none;
+    margin: 2vw;
 }
 
 .contact li a{

@@ -1,0 +1,53 @@
+.text_for_form {
+    margin: 0vw 10vw 7vw 10vw;
+  }
+  
+ .text_for_form h2, 
+ .text_for_form h3, 
+ .text_for_form h4 {
+    margin-bottom: 1rem;
+    color:rgb(223, 223, 223)
+  }
+  
+  span{
+    color:green
+  }
+  .paragraph1{
+    margin: 3vw 0 3vw 0;;
+  }
+  .paragraph {
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+  }
+  
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
+  .OurText_form_block .paragraph p {
+    margin-top: 0.5rem;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .expanded {
+    max-height: 500px;
+    opacity: 1;
+  }
+  .OurText_form_block .paragraph .expanded {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+.paragraph p,
+.paragraph h4{
+    font-size: 1.3vw;
+    color: rgb(13, 37, 13);
+}

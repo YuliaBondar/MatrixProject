@@ -2,6 +2,7 @@ import React from 'react';
 import './StagesOfWork.css';
 import stage from './Stage.js';
 
+
 const StagesOfWork = () => {
   return (
     <div className='stage_of_work'>
