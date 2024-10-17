@@ -102,7 +102,7 @@ const Form = () => {
             })
             .catch((error) => {
                 console.error('Error:', error);
-                setPopupMessage('Failed to fetch: ' + error.message);
+                setPopupMessage('Ошибка сервера: ' + error.message);
                 setShowPopup(true);
             });
     };
